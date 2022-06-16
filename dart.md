@@ -32,6 +32,25 @@ int a = 3;
 var a = 3;
 ```
 
+## Immutable Variables: final and const
+
+### final keyword
+
+- You initialize it with a value and that value is stored there forever.
+
+```js
+final String greeting = "Hi!";
+```
+
+### const keyword
+
+- **const** is used to create **compile-time** constants: the compiler will evaluate the value of the constant when you build your app.
+- You can’t have const **arguments**.
+
+```js
+const a = 3;
+```
+
 ## Characters and Strings
 
 In flutter, string is a data type which can hold both single character, array of characters or a literal string. That's why you can enclose it in single and double quotes.
@@ -116,6 +135,19 @@ List numbers = [1, 2, 3];
 
 ## Multi-Line Strings and Raw Strings
 
+- You can make multi-line strings by using **triple** quotes.
+
+```js
+"""
+Hello
+World
+"""
+
+```
+
+## Conditions: Boolean Algebra in Dart
+
+- You can use ==, !=, >, <, <= and >= to **compare values**, and you use && as the **AND** operator, || as the **OR** operator and ! as the **NOT** operator.
 
 
 # Reference
