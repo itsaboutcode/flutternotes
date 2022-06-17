@@ -1,13 +1,15 @@
 # Dart
 
-Dart is a programming language resemables Java.
+Dart is a programming language which resemables Java.
 
 ## Comments in Dart
 
 - Single-line comments are created by adding // before the comment
+  
 - Multi-line comments are created by adding /* before the comment and */ after it.
 
 ```js
+
 // this is a comment
 
 int a = 3; // this is also a comment
@@ -21,11 +23,12 @@ comment */
 
 ## Variable
 
-Just like Java, by **prefixing** the variable name with the data type.
+- **Prefix** the variable with data type, and then variable name comes.
 
 
 ```js
-variable_type variable_name = intial_value;
+
+data_type variable_name = intial_value;
 
 int a = 3;
 
@@ -45,6 +48,7 @@ final String greeting = "Hi!";
 ### const keyword
 
 - **const** is used to create **compile-time** constants: the compiler will evaluate the value of the constant when you build your app.
+  
 - You can’t have const **arguments**.
 
 ```js
@@ -53,7 +57,7 @@ const a = 3;
 
 ## Characters and Strings
 
-In flutter, string is a data type which can hold both single character, array of characters or a literal string. That's why you can enclose it in single and double quotes.
+- In flutter, string is a data type which can hold both single character, array of characters or a literal string. That's why you can enclose it in single and double quotes.
 
 
 ```js
@@ -70,13 +74,15 @@ assert(hello == 'Hi!');
 
 ## Assert
 
-`assert` terminate the execution if the condition in its parentheses isn’t true (only in testing/debug mode). It's not effective in production code.
+- `assert` terminate the execution if the condition in its parentheses isn’t true (only in testing/debug mode). 
+  
+- It's not effective in production code.
 
 ## The Backslash
 
-The backslash can be used to **escape** some characters or **insert** special characters.
+- The backslash can be used to **escape** some characters or **insert** special characters.
 
-For example if you wanted to print " in a string, you have 2 methods
+For example if you wanted to print " in a string, you have 2 options
 
 1. Create literal string in '' and add "" inside it
 
@@ -84,13 +90,13 @@ For example if you wanted to print " in a string, you have 2 methods
 'Hello "World"'
 ```
 
-2. escape the quotes
+2. Escape the quotes using \"
 
 ```js
 "Hello \"World\""
 ```
 
-3. Adding special character to add next line, escate \n.
+3. Adding special character to add next line, escape \n.
 
 ```js
 
@@ -108,7 +114,7 @@ For example if you wanted to print " in a string, you have 2 methods
 
 - String interpolation allows you to **insert** one or more **variables** value into a string. 
 
-- By prefixing a variable’s name with $ you can insert its value into the string.”
+- By prefixing a variable’s name with **$**, you can insert its value into the string.”
 
 
 ```js
