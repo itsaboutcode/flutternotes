@@ -156,5 +156,98 @@ World
 - You can use ==, !=, >, <, <= and >= to **compare values**, and you use && as the **AND** operator, || as the **OR** operator and ! as the **NOT** operator.
 
 
+## List/Array and collection literals
+
+- List is an ordered collection of data.
+- Elements of list are indexed from 0 to length-1.
+- Length of List is the number of elements it contains.
+- It can be initialized with `list literal`, which is comma-seperated list of values enclosed in square brackets.
+
+```js
+
+var list = [10,20,30];
+
+assert(list[0] == 30);
+
+```
+
+## The 'for in' Loop
+
+It's a special kind of loop which **iterates** over the element of a list.
+
+var names = ["Adil", "Muhammad", "Bushra", "Shaukat"];
+
+for (var name in names) {
+    print(name);
+}
+
+
+## Functions
+
+- Dart support **top level** function => you can define functions outside any class defintion that can be called from anywhere in the code.
+
+Syntax
+
+```js
+
+returnType functionName(parameters) {
+    return returnvalue;
+}
+
+```
+
+- if a function have `void` return type, `return` is not required.
+
+
+```js
+double squre(double n) {
+    return n*n;
+}
+```
+
+## Function Parameters
+
+### Positional Parameters
+
+- You define them like variables, one after another, and you set the arguments in the same way, following the same order.
+
+
+### Named Parameters
+
+- It allows the calling of a function to set the arguments in a different order (or even for just some of the parameters) by specifying a name for each parameter.
+- If you wrap the parameters in **curly braces**, you’ll make them **named** and **optional**.
+
+
+```js
+double calculate({}) {
+    return value;
+}
+```
+
+### The Arrow
+
+- If function if composed of one instruction, you can use the arrow notation.
+
+```js
+
+int square(int n) {
+    return n*n;
+}
+
+int square(int n) => n*n;
+
+```
+
+### Anonymous Functions and Closures
+
+- They are functions defined as variables.
+
+## main Function
+
+- `main` is the function called when any kind of Dart program, including Flutter app.
+- It has `void` return type, and it takes no arguments.
+- It can be `async`
+
+
 # Reference
 - https://dart.dev/
