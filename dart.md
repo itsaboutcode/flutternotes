@@ -175,11 +175,13 @@ assert(list[0] == 30);
 
 It's a special kind of loop which **iterates** over the element of a list.
 
+```js
 var names = ["Adil", "Muhammad", "Bushra", "Shaukat"];
 
 for (var name in names) {
     print(name);
 }
+```
 
 
 ## Functions
@@ -196,7 +198,7 @@ returnType functionName(parameters) {
 
 ```
 
-- if a function have `void` return type, `return` is not required.
+- If a function have `void` return type, `return` is not required.
 
 
 ```js
@@ -224,9 +226,9 @@ double calculate({}) {
 }
 ```
 
-### The Arrow
+### The Arrow Notation
 
-- If function if composed of one instruction, you can use the arrow notation.
+- If function is composed of one instruction, you can use **the arrow** notation.
 
 ```js
 
@@ -246,7 +248,7 @@ int square(int n) => n*n;
 
 - `main` is the function called when any kind of Dart program, including Flutter app.
 - It has `void` return type, and it takes no arguments.
-- It can be `async`
+- It can be `async`.
 
 
 # Reference
