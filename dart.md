@@ -211,6 +211,8 @@ for (var name in names) {
 
 - Dart support **top level** function => you can define functions outside any class defintion that can be called from anywhere in the code.
 - Dart is true OO language => Function are objects and have a type, [Function](https://api.dart.dev/stable/2.17.3/dart-core/Function-class.html)
+- This means that functions can be assigned to variables or passed as arguments to other functions. 
+- You can also call an instance of a Dart class as if it were a [function](https://dart.dev/guides/language/language-tour#callable-classes).
 
 Syntax
 
@@ -231,7 +233,14 @@ double squre(double n) {
 }
 ```
 
+- Although return type of function should be mentiond but in dart, it's not equired.
+
+
+
 ## Function Parameters
+
+- A function can have any number of `required positional` parameters. 
+- These can be followed either by `named parameters` or by `optional positional parameters` (but not both).
 
 ### Positional Parameters
 
@@ -246,6 +255,7 @@ Text(textScaleFactor: 4.0, "Hello world!") // wrong
 
 ### Named Parameters
 
+- Named parameters are `optional unless` they’re `explicitly` marked as `required`.
 - A named parameter is a parameter whose **meaning** depends on the word before the **colon**.
 - A Text constructor call can have many different named parameters, such as textScaleFactor, style, and maxLines.
 - You can write the named parameters **in any order** as long as they **come after any of the positional parameters**.
@@ -289,4 +299,4 @@ int square(int n) => n*n;
 
 
 # Reference
-- https://dart.dev/
+- https://dart.dev/guides/language/language-tour
