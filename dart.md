@@ -2,7 +2,12 @@
 
 - [Dart](#dart)
   - [Comments in Dart](#comments-in-dart)
+  - [Data Types](#data-types)
+    - [Void](#void)
+    - [var](#var)
   - [Variable](#variable)
+    - [Variable declarion syntax](#variable-declarion-syntax)
+  - [Null safety](#null-safety)
   - [Immutable Variables: final and const](#immutable-variables-final-and-const)
     - [final keyword](#final-keyword)
     - [const keyword](#const-keyword)
@@ -15,6 +20,7 @@
   - [List/Array and collection literals](#listarray-and-collection-literals)
   - [The 'for in' Loop](#the-for-in-loop)
   - [Functions](#functions)
+  - [main()](#main)
   - [Function Parameters](#function-parameters)
     - [Positional Parameters](#positional-parameters)
     - [Named Parameters](#named-parameters)
@@ -24,6 +30,7 @@
 - [Reference](#reference)
 
 Dart is a Object Oriented programming language which resemables Java.
+
 
 ## Comments in Dart
 
@@ -43,11 +50,33 @@ comment */
 
 ```
 
+## Data Types
+
+### Void
+- A special type that indicates a value that’s never used. 
+
+### var
+- A way to declare a variable without specifying its type.
+
 
 ## Variable
 
-- **Prefix** the variable with data type, and then variable name comes.
+- Dart supports **top-level** variables, as well as variables tied to a class or object (**static** and **instance** variables). 
 
+- Instance variables are sometimes known as fields or properties.
+
+- When you want to explicitly say that any type is allowed, use the type **Object?** (if you’ve enabled **null safety**), **Object**, or—if you must defer type checking until runtime—the special type dynamic.
+
+= Everything you can place in a variable is an **object**, and every object is an instance of a class. 
+
+- Even numbers, functions, and null are objects. 
+  
+- With the exception of null (if you enable sound null safety), all objects inherit from the **Object** class.
+  
+  
+### Variable declarion syntax
+
+- **Prefix** the variable with data type, and then variable name comes.
 
 ```js
 
@@ -57,6 +86,18 @@ int a = 3;
 
 var a = 3;
 ```
+
+## [Null safety](https://dart.dev/null-safety)
+
+- If you enable **null safety**, variables can’t contain null unless you say they can. 
+
+- You can make a variable **nullable** by putting a **question mark (?)** at the end of its type. For example, a variable of type **int?** might be an integer, or it might be null. 
+
+- If you know that an expression never evaluates to null but Dart disagrees, you can add **!** to assert that it isn’t null (and to throw an exception if it is). An example: **int x = nullableButNotNullInt!**
+
+- **Uninitialized** variables that have a **nullable type** have an initial value of **null**. 
+
+- https://www.youtube.com/watch?v=iYhOU9AuaFs&list=PLjxrf2q8roU3wk7CDw4RfV3mEwOJbjx1k&index=10
 
 ## Immutable Variables: final and const
 
@@ -210,8 +251,11 @@ for (var name in names) {
 ## [Functions](https://dart.dev/guides/language/language-tour#functions)
 
 - Dart support **top level** function => you can define functions outside any class defintion that can be called from anywhere in the code.
+
 - Dart is true OO language => Function are objects and have a type, [Function](https://api.dart.dev/stable/2.17.3/dart-core/Function-class.html)
+
 - This means that functions can be assigned to variables or passed as arguments to other functions. 
+
 - You can also call an instance of a Dart class as if it were a [function](https://dart.dev/guides/language/language-tour#callable-classes).
 
 Syntax
@@ -234,6 +278,10 @@ double squre(double n) {
 ```
 
 - Although return type of function should be mentiond but in dart, it's not equired.
+
+## main()
+
+The special, **required**, top-level function where app execution starts.
 
 
 

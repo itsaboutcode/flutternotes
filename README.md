@@ -24,4 +24,10 @@
 - https://flutter.dev/
 - https://dart.dev/
 - https://www.youtube.com/c/TheFlutterWay
+- https://www.youtube.com/c/dbestech
+- https://www.youtube.com/c/FlutterMapp
+- https://www.youtube.com/c/TheNetNinja
+- https://www.youtube.com/c/Freecodecamp
+- https://www.youtube.com/googlecode
+- https://www.youtube.com/c/flutterdev
 
