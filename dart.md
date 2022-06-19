@@ -210,7 +210,7 @@ for (var name in names) {
 ## [Functions](https://dart.dev/guides/language/language-tour#functions)
 
 - Dart support **top level** function => you can define functions outside any class defintion that can be called from anywhere in the code.
-- Dart is true OO language => Function are objects and have a type `[Function](https://api.dart.dev/stable/2.17.3/dart-core/Function-class.html)`
+- Dart is true OO language => Function are objects and have a type, [Function](https://api.dart.dev/stable/2.17.3/dart-core/Function-class.html)
 
 Syntax
 
