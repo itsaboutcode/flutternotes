@@ -1,6 +1,29 @@
 # Dart
 
-Dart is a programming language which resemables Java.
+- [Dart](#dart)
+  - [Comments in Dart](#comments-in-dart)
+  - [Variable](#variable)
+  - [Immutable Variables: final and const](#immutable-variables-final-and-const)
+    - [final keyword](#final-keyword)
+    - [const keyword](#const-keyword)
+  - [Characters and Strings](#characters-and-strings)
+  - [Assert](#assert)
+  - [The Backslash](#the-backslash)
+  - [String Interpolation](#string-interpolation)
+  - [Multi-Line Strings and Raw Strings](#multi-line-strings-and-raw-strings)
+  - [Conditions: Boolean Algebra in Dart](#conditions-boolean-algebra-in-dart)
+  - [List/Array and collection literals](#listarray-and-collection-literals)
+  - [The 'for in' Loop](#the-for-in-loop)
+  - [Functions](#functions)
+  - [Function Parameters](#function-parameters)
+    - [Positional Parameters](#positional-parameters)
+    - [Named Parameters](#named-parameters)
+    - [The Arrow Notation](#the-arrow-notation)
+    - [Anonymous Functions and Closures](#anonymous-functions-and-closures)
+  - [main Function](#main-function)
+- [Reference](#reference)
+
+Dart is a Object Oriented programming language which resemables Java.
 
 ## Comments in Dart
 
@@ -184,9 +207,10 @@ for (var name in names) {
 ```
 
 
-## Functions
+## [Functions](https://dart.dev/guides/language/language-tour#functions)
 
 - Dart support **top level** function => you can define functions outside any class defintion that can be called from anywhere in the code.
+- Dart is true OO language => Function are objects and have a type `[Function](https://api.dart.dev/stable/2.17.3/dart-core/Function-class.html)`
 
 Syntax
 
@@ -211,12 +235,20 @@ double squre(double n) {
 
 ### Positional Parameters
 
-- You define them like variables, one after another, and you set the arguments in the same way, following the same order.
+- A positional parameter is a parameter whose meaning depends on its **position** in the parameter list. 
+- When you create a new Text object, the characters to be displayed must **always** come first in the list.
+
+```js
+Text("Hello world!", textScaleFactor: 4.0)  // correct
+Text(textScaleFactor: 4.0, "Hello world!") // wrong
+```
 
 
 ### Named Parameters
 
-- It allows the calling of a function to set the arguments in a different order (or even for just some of the parameters) by specifying a name for each parameter.
+- A named parameter is a parameter whose **meaning** depends on the word before the **colon**.
+- A Text constructor call can have many different named parameters, such as textScaleFactor, style, and maxLines.
+- You can write the named parameters **in any order** as long as they **come after any of the positional parameters**.
 - If you wrap the parameters in **curly braces**, you’ll make them **named** and **optional**.
 
 
@@ -224,6 +256,11 @@ double squre(double n) {
 double calculate({}) {
     return value;
 }
+
+Text("Hello world!", 
+    textScaleFactor: 4.0,    
+    style: TextStyle(fontSize: 28.0));
+
 ```
 
 ### The Arrow Notation
