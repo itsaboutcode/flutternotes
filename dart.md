@@ -1,7 +1,10 @@
 # Dart
 
 - [Dart](#dart)
-  - [Comments in Dart](#comments-in-dart)
+  - [Comments](#comments)
+    - [Single-line comments](#single-line-comments)
+    - [Multi-line comments](#multi-line-comments)
+    - [Documentation comments](#documentation-comments)
   - [Data Types](#data-types)
     - [Void](#void)
     - [var](#var)
@@ -27,28 +30,74 @@
     - [The Arrow Notation](#the-arrow-notation)
     - [Anonymous Functions and Closures](#anonymous-functions-and-closures)
   - [main Function](#main-function)
+  - [Classes](#classes)
+    - [Using class members](#using-class-members)
+    - [Using constructors](#using-constructors)
+    - [Class variables and methods](#class-variables-and-methods)
+      - [Static variables](#static-variables)
+      - [Static methods](#static-methods)
 - [Reference](#reference)
 
 Dart is a Object Oriented programming language which resemables Java.
 
+## Comments
 
-## Comments in Dart
+- Dart supports single-line comments, multi-line comments, and documentation comments.
 
-- Single-line comments are created by adding // before the comment
+### Single-line comments
+
+- A single-line comment begins with //. 
   
-- Multi-line comments are created by adding /* before the comment and */ after it.
+- Everything between // and the end of line is ignored by the Dart compiler.
+
+```js
+void main() {
+  // TODO: refactor into an AbstractLlamaGreetingFactory?
+  print('Welcome to my Llama farm!');   // This is a comment
+}
+```
+
+### Multi-line comments
+
+- A multi-line comment begins with /* and ends with */. 
+
+- Everything between /* and */ is ignored by the Dart compiler
 
 ```js
 
-// this is a comment
+void main() {
+  /*
+   * This is a lot of work. Consider raising chickens.
 
-int a = 3; // this is also a comment
-
-/* this is also
-a long, long
-comment */
+  Llama larry = Llama();
+  larry.feed();
+  larry.exercise();
+  larry.clean();
+   */
+}
 
 ```
+
+### Documentation comments
+
+- Documentation comments are multi-line or single-line comments that begin with /// or /**. 
+
+- Using /// on consecutive lines has the same effect as a multi-line doc comment.
+
+
+```js
+/// A domesticated South American camelid (Lama glama).
+///
+/// Andean cultures have used llamas as meat and pack
+/// animals since pre-Hispanic times.
+///
+/// Just like any other animal, llamas need to eat,
+/// so don't forget to [feed] them some [Food].
+```
+
+
+---
+
 
 ## Data Types
 
@@ -345,6 +394,70 @@ int square(int n) => n*n;
 - It has `void` return type, and it takes no arguments.
 - It can be `async`.
 
+
+
+## Classes
+
+- Dart is an object-oriented language with classes and **mixin-based** inheritance.
+  
+- **Mixin-based** inheritance means that although every class (except for the top class, Object?) has **exactly one superclass**, a class body can be reused in multiple class hierarchies.
+
+- **Extension methods** are a way to add functionality to a class without changing the class or creating a subclass.
+
+### Using class members
+
+- Objects have members consisting of **functions and data** (**methods and instance variables**, respectively).
+
+- When you call a method, you **invoke** it on an object: the method has **access** to that object’s functions and data.
+
+- Use a **dot (.)** to refer to an instance variable or method:
+
+```js
+
+var p = Point(2, 2);
+
+// Get the value of y.
+assert(p.y == 2);
+
+// Invoke distanceTo() on p.
+double distance = p.distanceTo(Point(4, 4));
+
+```
+
+- Use `?.` instead of `.` to avoid an exception when the leftmost operand is null:
+
+```js
+// If p is non-null, set a variable equal to its y value.
+var a = p?.y;
+```
+
+### Using constructors
+
+### Class variables and methods
+
+- Use the `static` keyword to implement **class-wide** variables and methods.
+
+#### Static variables
+
+- Static/class variables are useful for class-wide **state** and **constants**.
+- Static variables **aren’t initialized** until they’re used.
+
+```js
+
+class Queue {
+  static const initialCapacity = 16;
+}
+
+void main() {
+  assert(Queue.initialCapacity == 16);
+}
+
+```
+
+#### Static methods
+
+- Static/Class methods **don’t** operate on an **instance**, and thus **don’t** have access to **this**.
+- They do, however, have **access to static** variables.
 
 # Reference
 - https://dart.dev/guides/language/language-tour

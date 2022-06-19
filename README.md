@@ -30,4 +30,6 @@
 - https://www.youtube.com/c/Freecodecamp
 - https://www.youtube.com/googlecode
 - https://www.youtube.com/c/flutterdev
+- https://www.youtube.com/c/RivaanRanawat/
+- https://www.youtube.com/c/SantosEnoque/
 
