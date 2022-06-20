@@ -42,6 +42,8 @@
 
 
 
+
+
   
 
 
@@ -60,6 +62,8 @@
 
 ## Opensource Projects
 
+- https://github.com/authpass/authpass
 - https://github.com/invoiceninja/admin-portal
+- https://github.com/AppFlowy-IO/AppFlowy
 - https://github.com/Solido/awesome-flutter
 - https://github.com/tortuvshin/open-source-flutter-apps
