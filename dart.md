@@ -22,6 +22,17 @@
   - [Conditions: Boolean Algebra in Dart](#conditions-boolean-algebra-in-dart)
   - [List/Array and collection literals](#listarray-and-collection-literals)
   - [The 'for in' Loop](#the-for-in-loop)
+  - [Control flow statements](#control-flow-statements)
+    - [If and else](#if-and-else)
+    - [For loops](#for-loops)
+    - [While and do-while](#while-and-do-while)
+    - [Break and continue](#break-and-continue)
+    - [Switch and case](#switch-and-case)
+    - [Assert](#assert-1)
+  - [Exceptions](#exceptions)
+    - [Throw](#throw)
+    - [Catch](#catch)
+    - [Finally](#finally)
   - [Functions](#functions)
   - [main()](#main)
   - [Function Parameters](#function-parameters)
@@ -261,7 +272,6 @@ List numbers = [1, 2, 3];
 Hello
 World
 """
-
 ```
 
 ## Conditions: Boolean Algebra in Dart
@@ -296,6 +306,33 @@ for (var name in names) {
 }
 ```
 
+---
+
+## Control flow statements
+
+### If and else
+
+### For loops
+
+### While and do-while
+
+### Break and continue
+
+### Switch and case
+
+### Assert
+
+---
+
+## Exceptions
+
+### Throw
+
+### Catch
+
+### Finally
+
+---
 
 ## [Functions](https://dart.dev/guides/language/language-tour#functions)
 
@@ -394,6 +431,7 @@ int square(int n) => n*n;
 - It has `void` return type, and it takes no arguments.
 - It can be `async`.
 
+---
 
 
 ## Classes
@@ -458,6 +496,8 @@ void main() {
 
 - Static/Class methods **don’t** operate on an **instance**, and thus **don’t** have access to **this**.
 - They do, however, have **access to static** variables.
+
+---
 
 # Reference
 - https://dart.dev/guides/language/language-tour
