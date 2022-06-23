@@ -7,7 +7,9 @@
 # Flutter
 
 - Flutter was introduced on December 5, 2018.
-
+- It help you create apps for iOS, Android, Mac OS, Windows, Linux and Web with single codebase.
+  
+  
 - [Dart Language](dart.md)
 - [Flutter](flutter.md)
 

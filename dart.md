@@ -34,7 +34,6 @@
     - [Catch](#catch)
     - [Finally](#finally)
   - [Functions](#functions)
-  - [main()](#main)
   - [Function Parameters](#function-parameters)
     - [Positional Parameters](#positional-parameters)
     - [Named Parameters](#named-parameters)
@@ -47,6 +46,7 @@
     - [Class variables and methods](#class-variables-and-methods)
       - [Static variables](#static-variables)
       - [Static methods](#static-methods)
+  - [Async Coding in Dart](#async-coding-in-dart)
 - [Reference](#reference)
 
 Dart is a Object Oriented programming language which resemables Java.
@@ -365,11 +365,6 @@ double squre(double n) {
 
 - Although return type of function should be mentiond but in dart, it's not equired.
 
-## main()
-
-The special, **required**, top-level function where app execution starts.
-
-
 
 ## Function Parameters
 
@@ -427,6 +422,7 @@ int square(int n) => n*n;
 
 ## main Function
 
+- The special, **required**, top-level function where app execution starts.
 - `main` is the function called when any kind of Dart program, including Flutter app.
 - It has `void` return type, and it takes no arguments.
 - It can be `async`.
@@ -498,6 +494,11 @@ void main() {
 - They do, however, have **access to static** variables.
 
 ---
+
+
+
+
+## [Async Coding in Dart](dart_async_await.md)
 
 # Reference
 - https://dart.dev/guides/language/language-tour

@@ -1,4 +1,5 @@
 - [Flutter](#flutter)
+  - [Flutter Command Line](#flutter-command-line)
   - [Introduction to widgets](#introduction-to-widgets)
     - [Stateless Widget](#stateless-widget)
     - [Stateful Widget](#stateful-widget)
@@ -9,6 +10,9 @@
 # Flutter
 
 - Flutter is **Google's UI toolkit** for building beautiful, **natively compiled applications** for mobile, web, and desktop from a single codebase.
+
+## [Flutter Command Line](flutter_cli.md)
+
 
 ## Introduction to widgets
 
