@@ -44,3 +44,6 @@
 - https://www.youtube.com/watch?v=HmY87B1LlPk
 - https://www.youtube.com/c/CodeWithAndrea/
 - https://www.youtube.com/c/AbdulAzizAhwanID
+- https://www.youtube.com/user/kaushikchandru
+- https://www.youtube.com/c/MitchKoko
+- https://www.youtube.com/c/ResoCoder
