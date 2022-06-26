@@ -49,7 +49,8 @@
   - [Async Coding in Dart](#async-coding-in-dart)
 - [Reference](#reference)
 
-Dart is a Object Oriented programming language which resemables Java.
+- Dart is a Object Oriented programming language which resemables Java.
+- Dart is a single threaded language.
 
 ## Comments
 
