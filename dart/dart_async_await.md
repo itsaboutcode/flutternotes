@@ -1,3 +1,12 @@
+- [Async/concurrent Coding in Dart](#asyncconcurrent-coding-in-dart)
+  - [Isolates](#isolates)
+  - [Future Functions](#future-functions)
+    - [Handling Future Functions](#handling-future-functions)
+      - [Async/Await Method](#asyncawait-method)
+      - [.then method](#then-method)
+    - [Handling Error](#handling-error)
+- [References](#references)
+
 # Async/concurrent Coding in Dart
 
 - Dart is a single threaded language.
@@ -18,6 +27,58 @@
 - Many Dart apps use only **one isolate** (the `main` isolate)
 
 - You can create **additional** isolates, enabling parallel code execution on multiple processor cores.
+
+
+## [Future Functions](https://api.dart.dev/stable/2.17.5/dart-async/Future-class.html)
+
+- These functions are **asynchronous**: they return after setting up a possibly time-consuming operation (such as I/O), without waiting for that operation to complete.
+
+- A future is `defined` exactly like a function in dart.
+  
+- If function return type is `void`, you use `Future` as return type. 
+  
+- If you want to return a `value` from the Future then you pass it a type.
+
+
+```js
+Future myVoidFuture() {}
+
+Future<bool> myTypedFuture() {}
+```
+
+### Handling Future Functions
+
+#### Async/Await Method
+
+- To call Future function, you use `await` keyword and the function `from which` you are calling this future function must be marked as `async`.
+
+```js
+
+Future actualCalc() {
+    return 2+2
+}
+
+Future<int> calculate() async {
+    return await actualCalc();
+}
+
+void main() async {
+
+    var calc = await calculate();
+    
+}
+
+```
+
+#### .then method
+
+```js
+
+    calculate().then((return_value){})
+
+```
+
+### Handling Error
 
 
 # References

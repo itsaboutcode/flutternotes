@@ -9,7 +9,7 @@
 - Flutter was introduced on December 5, 2018.
 - It help you create apps for iOS, Android, Mac OS, Windows, Linux and Web with single codebase.
   
-  
+
 - [Dart Language](dart.md)
 - [Flutter](flutter.md)
 
@@ -49,3 +49,12 @@
 - https://www.youtube.com/user/kaushikchandru
 - https://www.youtube.com/c/MitchKoko
 - https://www.youtube.com/c/ResoCoder
+- https://www.youtube.com/c/Flutterly/
+- https://www.youtube.com/c/eddydn71
+- https://www.youtube.com/c/LearnFlutterCode
+- https://www.youtube.com/c/HelloCodepur
+- https://www.youtube.com/c/ZaisteProgramming
+- https://www.youtube.com/user/azamsharp
+- https://www.youtube.com/c/FilledStacks
+- https://www.filledstacks.com/
+
