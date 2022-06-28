@@ -1,3 +1,8 @@
+- [Data Types](#data-types)
+  - [Void](#void)
+  - [var](#var)
+  - [Characters and Strings](#characters-and-strings)
+- [Reference](#reference)
 # Data Types
 
 ## Void

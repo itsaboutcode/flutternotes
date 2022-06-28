@@ -3,28 +3,15 @@
   - [Data Types](#data-types)
   - [Variable](#variable)
   - [Null safety](#null-safety)
-  - [Assert](#assert)
   - [The Backslash](#the-backslash)
   - [String Interpolation](#string-interpolation)
   - [Multi-Line Strings and Raw Strings](#multi-line-strings-and-raw-strings)
   - [Conditions: Boolean Algebra in Dart](#conditions-boolean-algebra-in-dart)
   - [List/Array and collection literals](#listarray-and-collection-literals)
   - [The 'for in' Loop](#the-for-in-loop)
-  - [Control flow statements](#control-flow-statements)
-    - [If and else](#if-and-else)
-    - [For loops](#for-loops)
-    - [While and do-while](#while-and-do-while)
-    - [Break and continue](#break-and-continue)
-    - [Switch and case](#switch-and-case)
-    - [Assert](#assert-1)
+  - [Control Flow Statements](#control-flow-statements)
   - [Exceptions](#exceptions)
   - [Functions](#functions)
-  - [Function Parameters](#function-parameters)
-    - [Positional Parameters](#positional-parameters)
-    - [Named Parameters](#named-parameters)
-    - [The Arrow Notation](#the-arrow-notation)
-    - [Anonymous Functions and Closures](#anonymous-functions-and-closures)
-  - [main Function](#main-function)
   - [Classes](#classes)
   - [Async Coding in Dart](#async-coding-in-dart)
   - [Exception Handling](#exception-handling)
@@ -42,13 +29,6 @@
 ## [Variable](dart/dart_variables.md)
 
 ## [Null safety](dart/dart_null_safety.md)
-
-
-## Assert
-
-- `assert` terminate the execution if the condition in its parentheses isn’t true (only in testing/debug mode). 
-  
-- It's not effective in production code.
 
 ## The Backslash
 
@@ -156,119 +136,11 @@ for (var name in names) {
 
 ---
 
-## Control flow statements
-
-### If and else
-
-### For loops
-
-### While and do-while
-
-### Break and continue
-
-### Switch and case
-
-### Assert
-
----
+## [Control Flow Statements](dart/dart_conditional_flows.md)
 
 ## [Exceptions](dart/dart_exceptions.md)
 
-## [Functions](https://dart.dev/guides/language/language-tour#functions)
-
-- Dart support **top level** function => you can define functions outside any class defintion that can be called from anywhere in the code.
-
-- Dart is true OO language => Function are objects and have a type, [Function](https://api.dart.dev/stable/2.17.3/dart-core/Function-class.html)
-
-- This means that functions can be assigned to variables or passed as arguments to other functions. 
-
-- You can also call an instance of a Dart class as if it were a [function](https://dart.dev/guides/language/language-tour#callable-classes).
-
-Syntax
-
-```js
-
-returnType functionName(parameters) {
-    return returnvalue;
-}
-
-```
-
-- If a function have `void` return type, `return` is not required.
-
-
-```js
-double squre(double n) {
-    return n*n;
-}
-```
-
-- Although return type of function should be mentiond but in dart, it's not equired.
-
-
-## Function Parameters
-
-- A function can have any number of `required positional` parameters. 
-- These can be followed either by `named parameters` or by `optional positional parameters` (but not both).
-
-### Positional Parameters
-
-- A positional parameter is a parameter whose meaning depends on its **position** in the parameter list. 
-- When you create a new Text object, the characters to be displayed must **always** come first in the list.
-
-```js
-Text("Hello world!", textScaleFactor: 4.0)  // correct
-Text(textScaleFactor: 4.0, "Hello world!") // wrong
-```
-
-
-### Named Parameters
-
-- Named parameters are `optional unless` they’re `explicitly` marked as `required`.
-- A named parameter is a parameter whose **meaning** depends on the word before the **colon**.
-- A Text constructor call can have many different named parameters, such as textScaleFactor, style, and maxLines.
-- You can write the named parameters **in any order** as long as they **come after any of the positional parameters**.
-- If you wrap the parameters in **curly braces**, you’ll make them **named** and **optional**.
-
-
-```js
-double calculate({}) {
-    return value;
-}
-
-Text("Hello world!", 
-    textScaleFactor: 4.0,    
-    style: TextStyle(fontSize: 28.0));
-
-```
-
-### The Arrow Notation
-
-- If function is composed of one instruction, you can use **the arrow** notation.
-
-```js
-
-int square(int n) {
-    return n*n;
-}
-
-int square(int n) => n*n;
-
-```
-
-### Anonymous Functions and Closures
-
-- They are functions defined as variables.
-
-## main Function
-
-- The special, **required**, top-level function where app execution starts.
-- `main` is the function called when any kind of Dart program, including Flutter app.
-- It has `void` return type, and it takes no arguments.
-- It can be `async`.
-
----
-
+## [Functions](dart/dart_functions.md)
 
 ## [Classes](dart/dart_classes.md)
 

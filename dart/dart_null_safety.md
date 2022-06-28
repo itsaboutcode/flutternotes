@@ -1,3 +1,6 @@
+- [Null safety](#null-safety)
+- [Reference](#reference)
+
 # [Null safety](https://dart.dev/null-safety)
 
 - If you enable **null safety**, variables can’t contain null unless you say they can. 
