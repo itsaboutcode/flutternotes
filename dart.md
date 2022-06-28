@@ -1,16 +1,8 @@
-# Dart
-
 - [Dart](#dart)
   - [Comments](#comments)
   - [Data Types](#data-types)
-    - [Void](#void)
-    - [var](#var)
   - [Variable](#variable)
   - [Null safety](#null-safety)
-  - [Immutable Variables: final and const](#immutable-variables-final-and-const)
-    - [final keyword](#final-keyword)
-    - [const keyword](#const-keyword)
-  - [Characters and Strings](#characters-and-strings)
   - [Assert](#assert)
   - [The Backslash](#the-backslash)
   - [String Interpolation](#string-interpolation)
@@ -26,9 +18,6 @@
     - [Switch and case](#switch-and-case)
     - [Assert](#assert-1)
   - [Exceptions](#exceptions)
-    - [Throw](#throw)
-    - [Catch](#catch)
-    - [Finally](#finally)
   - [Functions](#functions)
   - [Function Parameters](#function-parameters)
     - [Positional Parameters](#positional-parameters)
@@ -41,71 +30,19 @@
   - [Exception Handling](#exception-handling)
 - [Reference](#reference)
 
+# Dart
+
 - Dart is a Object Oriented programming language which resemables Java.
 - Dart is a single threaded language.
 
-
 ## [Comments](dart/dart_commends.md)
 
-## Data Types
-
-### Void
-- A special type that indicates a value that’s never used. 
-
-### var
-- A way to declare a variable without specifying its type.
-
+## [Data Types](dart/dart_data_types.md)
 
 ## [Variable](dart/dart_variables.md)
 
-## [Null safety](https://dart.dev/null-safety)
+## [Null safety](dart/dart_null_safety.md)
 
-- If you enable **null safety**, variables can’t contain null unless you say they can. 
-
-- You can make a variable **nullable** by putting a **question mark (?)** at the end of its type. For example, a variable of type **int?** might be an integer, or it might be null. 
-
-- If you know that an expression never evaluates to null but Dart disagrees, you can add **!** to assert that it isn’t null (and to throw an exception if it is). An example: **int x = nullableButNotNullInt!**
-
-- **Uninitialized** variables that have a **nullable type** have an initial value of **null**. 
-
-- https://www.youtube.com/watch?v=iYhOU9AuaFs&list=PLjxrf2q8roU3wk7CDw4RfV3mEwOJbjx1k&index=10
-
-## Immutable Variables: final and const
-
-### final keyword
-
-- You initialize it with a value and that value is stored there forever.
-
-```js
-final String greeting = "Hi!";
-```
-
-### const keyword
-
-- **const** is used to create **compile-time** constants: the compiler will evaluate the value of the constant when you build your app.
-  
-- You can’t have const **arguments**.
-
-```js
-const a = 3;
-```
-
-## Characters and Strings
-
-- In flutter, string is a data type which can hold both single character, array of characters or a literal string. That's why you can enclose it in single and double quotes.
-
-
-```js
-String char = "H";
-var string = 'Hello WOrld';
-```
-
-You can concatinate two strings with + operator.
-
-```js
-var hello = 'Hi' + "!";
-assert(hello == 'Hi!');
-```
 
 ## Assert
 
@@ -235,15 +172,7 @@ for (var name in names) {
 
 ---
 
-## Exceptions
-
-### Throw
-
-### Catch
-
-### Finally
-
----
+## [Exceptions](dart/dart_exceptions.md)
 
 ## [Functions](https://dart.dev/guides/language/language-tour#functions)
 

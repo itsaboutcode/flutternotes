@@ -5,6 +5,9 @@
     - [Const Variables](#const-variables)
     - [Const Value](#const-value)
     - [Note](#note)
+  - [Immutable Variables: final and const](#immutable-variables-final-and-const)
+    - [final keyword](#final-keyword)
+    - [const keyword](#const-keyword)
 - [Reference](#reference)
 
 # [Variables](https://dart.dev/guides/language/language-tour#variables)
@@ -104,6 +107,27 @@ const Object i = 3; // Where i is a const Object with an int value...
 const list = [i as int]; // Use a typecast.
 const map = {if (i is int) i: 'int'}; // Use is and collection if.
 const set = {if (list is List<int>) ...list}; // ...and a spread.
+```
+
+
+## Immutable Variables: final and const
+
+### final keyword
+
+- You initialize it with a value and that value is stored there forever.
+
+```js
+final String greeting = "Hi!";
+```
+
+### const keyword
+
+- **const** is used to create **compile-time** constants: the compiler will evaluate the value of the constant when you build your app.
+  
+- You can’t have const **arguments**.
+
+```js
+const a = 3;
 ```
 
 
