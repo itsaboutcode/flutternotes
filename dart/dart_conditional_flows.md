@@ -1,29 +1,105 @@
 - [Conditional Flows](#conditional-flows)
-  - [If and else](#if-and-else)
-  - [For loops](#for-loops)
-  - [While and do-while](#while-and-do-while)
-  - [Break and continue](#break-and-continue)
-  - [Switch and case](#switch-and-case)
-  - [Assert](#assert)
+  - [`If` and `Else`](#if-and-else)
+  - [`for` loops](#for-loops)
+  - [`while` and `do-while` loops](#while-and-do-while-loops)
+  - [`break` and `continue`](#break-and-continue)
+  - [`switch` and `case`](#switch-and-case)
+  - [`assert`](#assert)
+  - [Exceptions](#exceptions)
 - [Reference](#reference)
 
 # [Conditional Flows](https://dart.dev/guides/language/language-tour#control-flow-statements)
 
-## If and else
+## `If` and `Else`
 
-## For loops
+```js
+if (isRaining()) {
+  you.bringRainCoat();
+} else if (isSnowing()) {
+  you.wearJacket();
+} else {
+  car.putTopDown();
+}
+```
 
-## While and do-while
 
-## Break and continue
+## `for` loops
 
-## Switch and case
+```js
+var message = StringBuffer('Dart is fun');
+for (var i = 0; i < 5; i++) {
+  message.write('!');
+}
+```
 
-## Assert
+- If the object that you are iterating over is an `Iterable (such as List or Set)` and 
+- if you `don’t need to know the current iteration counter`, you can use the `for-in`
+  
+
+```js
+for (final candidate in candidates) {
+  candidate.interview();
+}
+```
+
+- Iterable `classes` also have a `forEach()` method as another option.
+
+```js
+var collection = [1, 2, 3];
+collection.forEach(print); // 1 2 3
+```
+
+
+## `while` and `do-while` loops
+
+
+```js
+
+while (!isDone()) {
+  doSomething();
+}
+```
+
+```js
+do {
+  printLine();
+} while (!atEndOfPage());
+```
+
+
+## `break` and `continue`
+
+- `break` stop looping
+
+```js
+while (true) {
+  if (shutDownRequested()) break;
+  processIncomingRequests();
+}
+```
+
+- `continue` skip to the next loop iteration.
+
+```js
+for (int i = 0; i < candidates.length; i++) {
+  var candidate = candidates[i];
+  if (candidate.yearsExperience < 5) {
+    continue;
+  }
+  candidate.interview();
+}
+```
+
+## `switch` and `case`
+
+## `assert`
 
 - `assert` terminate the execution if the condition in its parentheses isn’t true (only in testing/debug mode). 
   
 - It's not effective in production code.
 
+## [Exceptions](dart_exceptions.md)
+
+- You can also affect the control flow using try-catch and throw.
 
 # Reference
