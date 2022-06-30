@@ -11,7 +11,7 @@
 
 - Dart is a single threaded language.
   
-- It still support, future, async/await, streams, and background work to work in modern aysnc envinment and in reactive way.
+- It still supports future, async/await, streams, and background work to work in a modern async environment and in a reactive way.
 
 - Dart supports concurrent programming with `async-await`, `isolates`, and classes such as `Future` and `Stream`.
 
@@ -35,7 +35,7 @@
 
 - A future is `defined` exactly like a function in dart.
   
-- If function return type is `void`, you use `Future` as return type. 
+- If the function return type is `void`, you use `Future` as return type. 
   
 - If you want to return a `value` from the Future then you pass it a type.
 
@@ -50,7 +50,7 @@ Future<bool> myTypedFuture() {}
 
 #### Async/Await Method
 
-- To call Future function, you use `await` keyword and the function `from which` you are calling this future function must be marked as `async`.
+- To call Future function, you use the `await` keyword and the function `from which` you are calling this future function must be marked as `async`.
 
 ```js
 

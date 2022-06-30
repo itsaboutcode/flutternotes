@@ -19,7 +19,7 @@
 
 # Dart
 
-- Dart is a Object Oriented programming language which resemables Java.
+- Dart is an Object Oriented programming language which resembles Java.
 - Dart is a single threaded language.
 
 ## [Comments](dart/dart_commends.md)
@@ -48,7 +48,7 @@ For example if you wanted to print " in a string, you have 2 options
 "Hello \"World\""
 ```
 
-3. Adding special character to add next line, escape \n.
+3. Adding a special character to add the next line, escape \n.
 
 ```js
 
@@ -64,7 +64,7 @@ For example if you wanted to print " in a string, you have 2 options
 
 ## String Interpolation
 
-- String interpolation allows you to **insert** one or more **variables** value into a string. 
+- String interpolation allows you to **insert** one or more **variables** values into a string. 
 
 - By prefixing a variable’s name with **$**, you can insert its value into the string.”
 
@@ -110,9 +110,9 @@ World
 ## List/Array and collection literals
 
 - List is an ordered collection of data.
-- Elements of list are indexed from 0 to length-1.
+- Elements of the list are indexed from 0 to length-1.
 - Length of List is the number of elements it contains.
-- It can be initialized with `list literal`, which is comma-seperated list of values enclosed in square brackets.
+- It can be initialized with `list literal`, which is a comma-separated list of values enclosed in square brackets.
 
 ```js
 
