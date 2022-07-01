@@ -94,7 +94,7 @@ for (int i = 0; i < candidates.length; i++) {
 
 ## `assert`
 
-- `assert` terminate the execution if the condition in its parentheses isn’t true (only in testing/debug mode). 
+- `assert` terminates the execution if the condition in its parentheses isn’t true (only in testing/debug mode). 
   
 - It's not effective in production code.
 

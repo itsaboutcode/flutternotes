@@ -9,7 +9,7 @@
 
 # [Functions](https://dart.dev/guides/language/language-tour#functions)
 
-- Dart support **top level** function => you can define functions outside any class defintion that can be called from anywhere in the code.
+- Dart support **top level** function => you can define functions outside any class definition that can be called from anywhere in the code.
 
 - Dart is true OO language => Function are objects and have a type, [Function](https://api.dart.dev/stable/2.17.3/dart-core/Function-class.html)
 
@@ -27,16 +27,16 @@ returnType functionName(parameters) {
 
 ```
 
-- If a function have `void` return type, `return` is not required.
+- If a function has a `void` return type, `return` is not required.
 
 
 ```js
-double squre(double n) {
+double square(double n) {
     return n*n;
 }
 ```
 
-- Although return type of function should be mentiond but in dart, it's not equired.
+- Although the return type of function should be mentioned but in dart, it's not required.
 
 
 ## Function Parameters
@@ -77,7 +77,7 @@ Text("Hello world!",
 
 ### The Arrow Notation
 
-- If function is composed of one instruction, you can use **the arrow** notation.
+- If a function is composed of one instruction, you can use **the arrow** notation.
 
 ```js
 
@@ -97,7 +97,7 @@ int square(int n) => n*n;
 
 - The special, **required**, top-level function where app execution starts.
 - `main` is the function called when any kind of Dart program, including Flutter app.
-- It has `void` return type, and it takes no arguments.
+- It has a `void` return type, and it takes no arguments.
 - It can be `async`.
 
 # Reference
