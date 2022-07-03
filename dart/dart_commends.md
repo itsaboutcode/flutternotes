@@ -10,9 +10,9 @@
 
 ## Single-line comments
 
-- A single-line comment begins with //. 
+- A single-line comment begins with `//`. 
   
-- Everything between // and the end of line is ignored by the Dart compiler.
+- Everything between `//` and the end of line is ignored by the Dart compiler.
 
 ```js
 void main() {
@@ -23,9 +23,9 @@ void main() {
 
 ## Multi-line comments
 
-- A multi-line comment begins with /* and ends with */. 
+- A multi-line comment begins with `/*` and ends with `*/`. 
 
-- Everything between /* and */ is ignored by the Dart compiler
+- Everything between `/*` and `*/` is ignored by the Dart compiler.
 
 ```js
 
@@ -44,9 +44,9 @@ void main() {
 
 ## Documentation comments
 
-- Documentation comments are multi-line or single-line comments that begin with /// or /**. 
+- Documentation comments are multi-line or single-line comments that begin with `///` or `/**`. 
 
-- Using /// on consecutive lines has the same effect as a multi-line doc comment.
+- Using `///` on consecutive lines has the same effect as a multi-line doc comment.
 
 
 ```js

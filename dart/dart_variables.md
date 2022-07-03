@@ -12,13 +12,13 @@
 
 # [Variables](https://dart.dev/guides/language/language-tour#variables)
 
-- Dart supports **top-level** variables, as well as variables tied to a class or object (**static** and **instance** variables). 
+- Dart supports **top-level** variables, as well as variables tied to a class (**static** variables) or object (**instance** variables). 
 
-- Instance variables are sometimes known as fields or properties.
+- **Instance** variables are sometimes known as `fields or properties`.
 
 - When you want to explicitly say that any type is allowed, use the type **Object?** (if you’ve enabled **null safety**), **Object**, or—if you must defer type checking until runtime—the special type dynamic.
 
-= Everything you can place in a variable is an **object**, and every object is an instance of a class. 
+- Everything you can place in a variable is an **object**, and every object is an instance of a class. 
 
 - Even numbers, functions, and null are objects. 
   
