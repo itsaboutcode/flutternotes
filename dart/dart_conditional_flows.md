@@ -69,7 +69,7 @@ do {
 
 ## `break` and `continue`
 
-- `break` stop looping
+- `break` stop looping.
 
 ```js
 while (true) {
@@ -92,6 +92,11 @@ for (int i = 0; i < candidates.length; i++) {
 
 ## `switch` and `case`
 
+- Switch statements in Dart compare `integer, string, or compile-time` constants using `==`.
+
+- The compared objects must all be `instances of the same class` (and not of any of its subtypes), 
+- and the class `must not` override ==.
+
 ## `assert`
 
 - `assert` terminates the execution if the condition in its parentheses isn’t true (only in testing/debug mode). 
@@ -103,3 +108,5 @@ for (int i = 0; i < candidates.length; i++) {
 - You can also affect the control flow using try-catch and throw.
 
 # Reference
+
+- https://dart.dev/guides/language/language-tour#control-flow-statements

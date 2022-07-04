@@ -7,7 +7,6 @@
   - [Multi-Line Strings and Raw Strings](#multi-line-strings-and-raw-strings)
   - [Conditions: Boolean Algebra in Dart](#conditions-boolean-algebra-in-dart)
   - [List/Array and collection literals](#listarray-and-collection-literals)
-  - [The 'for in' Loop](#the-for-in-loop)
   - [Control Flow Statements](#control-flow-statements)
   - [Exceptions](#exceptions)
   - [Functions](#functions)
@@ -64,20 +63,6 @@ var list = [10,20,30];
 assert(list[0] == 30);
 
 ```
-
-## The 'for in' Loop
-
-It's a special kind of loop which **iterates** over the element of a list.
-
-```js
-var names = ["Adil", "Muhammad", "Bushra", "Shaukat"];
-
-for (var name in names) {
-    print(name);
-}
-```
-
----
 
 ## [Control Flow Statements](dart/dart_conditional_flows.md)
 
