@@ -27,12 +27,16 @@
   
 ## Variable declarion syntax
 
-- **Prefix** the variable with data type, and then variable name comes.
+- **Prefix** the variable `name` with `data type`.
+  
+- Variables store `references`. 
+  
+- The variable called name contains a reference to a `String object` with a `value` of “Bob”.
 
 ```js
 data_type variable_name = intial_value;
-int a = 3;
-var a = 3;
+
+var name = 'Bob';
 ```
 
 ## [Final and const Variables](https://dart.dev/guides/language/language-tour#final-and-const)

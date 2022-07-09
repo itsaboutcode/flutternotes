@@ -6,7 +6,7 @@
 
 # [Comments](https://dart.dev/guides/language/language-tour#comments)
 
-- Dart supports single-line comments, multi-line comments, and documentation comments.
+- Dart supports `single-line, multi-line, and documentation` comments.
 
 ## Single-line comments
 
@@ -59,5 +59,6 @@ void main() {
 /// so don't forget to [feed] them some [Food].
 ```
 
-
 # Reference
+
+- https://dart.dev/guides/language/language-tour#comments
