@@ -13,6 +13,9 @@
 - [Dart Language](dart.md)
 - [Flutter](flutter.md)
 
+## What's flutter
+- It's a toolkit that makes it easy for developers to design beatiful interfaces for all sort of screen sizes and devices.
+
 
 ## Ahead-of-time (AOT) compiler
 
