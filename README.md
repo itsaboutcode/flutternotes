@@ -28,6 +28,13 @@
 - JIT complier just translate `enough` code which is required to run the code on the machine.
 - After that, it translate further when user proceed with the program e.g; when user press a button, application was suppose to open another screen. JIT compiler will only translate that code on demand.
 
+## [Install flutter](https://docs.flutter.dev/get-started/install)
+
+## [Setup your code editor for flutter](https://docs.flutter.dev/get-started/editor)
+
+## [Creating a flutter project](https://docs.flutter.dev/get-started/test-drive)
+
+
 
 
 # References
