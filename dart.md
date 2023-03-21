@@ -18,7 +18,52 @@
 # Dart
 
 - Dart is an Object Oriented programming language which resembles Java.
+
 - Dart is a single threaded language.
+
+- Dart 1.0 was released on November 14th, 2013
+
+- It covers client, server, and now mobile, web, desktop with Flutter.
+
+- It has virtual machine, core libraries and package management repository.
+
+- Instead of threads, all Dart code runs inside of `isolates`. Each isolate has its own memory heap, ensuring that no isolate’s state is accessible from any other isolate.
+
+- Dart has an `AOT (Ahead of Time) compiler`, which compiles to fast, predictable, native code that allows almost all of Flutter to be written in Dart. This not only makes Flutter fast but ensures that virtually everything (including all the widgets) can be customized.
+
+- In dart, all `statements` end with a semicolon `;`.
+
+## Dart program entry point
+
+- All dart programs e.g; flutter, the compiler look for an entry point.
+- In dart, this entry point is `main` method.
+
+```
+main(){
+  // Insert Code Here
+}
+```
+
+- If compiler don't find this, it will raise an error and application will not run.
+
+## Print method
+
+- This method is used to print something on the console
+
+```
+print("Hello World");
+```
+
+## Importing a library in dart
+
+```import 'dart:io';```
+
+
+- You can take the input from user with following command 
+
+```stdin.readLineSync()```
+
+## Imperative Programming
 
 ## [Comments](dart/dart_commends.md)
 
@@ -29,8 +74,6 @@
 ## [Null safety](dart/dart_null_safety.md)
 
 ## [String Interpolation and The Backslash](dart/dart_backslash.md)
-
-
 
 
 ## Multi-Line Strings and Raw Strings
