@@ -44,6 +44,15 @@
 
 - Stateless widget’s `build()` method is called only once.
 
+```
+class MyStatelessWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+```
+
 ### Stateful Widget
 
 - A Stateful widget is mutable. It keeps track of the state.
@@ -57,6 +66,21 @@
 - The **StatefulWidget** object is, itself, **immutable** and can be thrown away and **regenerated**, but the **State** object **persists** over the lifetime of the widget.
 
 - A Stateful widget’s build() method is called multiple times.
+
+
+```
+class MyStatefulWidget extends StatefulWidget {
+  @override
+  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+}
+
+class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+```
 
 
 
@@ -96,7 +120,27 @@
 
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
 
+- [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
+
+- [TextStyle](https://api.flutter.dev/flutter/painting/TextStyle-class.html)
+
+- [Icons](https://api.flutter.dev/flutter/material/Icons-class.html)
+
+- [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
+
 - [Container](https://api.flutter.dev/flutter/widgets/Container-class.html)
+
+- [Padding](https://api.flutter.dev/flutter/widgets/Padding-class.html)
+
+- [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html)
+
+- [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
+
+- [Divider](https://api.flutter.dev/flutter/material/Divider-class.html)
+
+- [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
+
+- [ListTitle](https://api.flutter.dev/flutter/material/ListTile-class.html)
 
 
   
