@@ -50,12 +50,35 @@
 
 
 
+## Flutter Project Default Structure
 
+
+<img width="343" alt="Screenshot 2023-04-01 at 6 06 27 PM" src="https://user-images.githubusercontent.com/204423/229290820-570ecf3d-4356-43b6-b8f2-a798e8139ab8.png">
+
+
+- android/: This folder contains native Android code.
+
+- iOS/: This folder contains native iOS code.
+
+- iOS/: This folder contains native iOS code.
+
+- Linux/: This folder contains native Linux code.
+
+- macOS/: This folder contains native macOS code.
+
+- windows/: This folder contains native windows code.
+
+- web/: This folder contains web code.
+
+- lib/: This folder contains all Dart files. This is a shared code across all platforms like iOS, Web, Desktop, and embedded devices. However, we are focusing only on the Android platform in this course.
+
+- test/: This folder contains all unit testing classes.
+
+- pubspec.yaml file: This is the dependency management and configuration file for the Flutter application.
 
 
 
   
-
 
 ## State Management
 
