@@ -17,6 +17,7 @@
 
 - Dart has an AOT (Ahead of Time) compiler, which compiles to fast, predictable, native code that allows almost all of Flutter to be written in Dart. This not only makes Flutter fast but ensures that virtually everything (including all the widgets) can be customized.
 
+
 ## [Flutter Command Line](flutter_cli.md)
 
 
@@ -25,6 +26,10 @@
 - The central idea is that you build your UI out of widgets. 
 
 - `Widget` is a component user see on the screen.
+
+- The framework forces the root widget to cover the screen.
+
+- A widget’s main job is to implement a `build()` function, which describes the widget in terms of other, lower-level widgets. 
   
 - Widgets describe what their **view should look like** given their **current configuration and state**. 
 
@@ -112,11 +117,18 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 - [MaterialApp](https://api.flutter.dev/flutter/material/MaterialApp-class.html)
 
+  - It's a top-level widget that wraps the entire app, providing a consistent look and feel across all screens.
+
 - [SafeArea](https://api.flutter.dev/flutter/widgets/SafeArea-class.html)
 
-- [Center](https://api.flutter.dev/flutter/widgets/Center-class.html)
+  - pre-built widget that provides padding to its child widget to ensure that the child's content is not obscured by device-specific elements such as the status bar, notches, and rounded corners.
+
 
 - [Scaffold](https://api.flutter.dev/flutter/material/Scaffold-class.html)
+
+  - pre-built widget that provides a basic layout structure for building Material Design-style apps. It is typically used as the top-level widget in a screen, and it provides a framework for adding app bars, drawers, tabs, and other common UI elements.
+
+- [Center](https://api.flutter.dev/flutter/widgets/Center-class.html)
 
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
 
@@ -140,7 +152,17 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 - [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
 
+- [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
+
 - [ListTitle](https://api.flutter.dev/flutter/material/ListTile-class.html)
+
+- [Stack](https://api.flutter.dev/flutter/widgets/Stack-class.html)
+
+- [Expand](https://api.flutter.dev/flutter/widgets/Expanded-class.html)
+
+  - It's used inside a Row, Column, or Flex widget to give a child widget the ability to expand to fill available space in a particular direction.
+
+- [Flex](https://api.flutter.dev/flutter/widgets/Flex-class.html)
 
 
   
