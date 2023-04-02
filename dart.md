@@ -63,6 +63,44 @@ print("Hello World");
 
 ```stdin.readLineSync()```
 
+## [final Keyword](https://www.educative.io/answers/what-is-the-final-keyword-in-dart)
+
+- `final` keyword is used to define `immutable` constants or objects
+- It's `runtime` constant value
+
+```
+// Without datatype
+final variable_name;
+
+// With datatype
+final data_type  variable_name;
+```
+
+```
+final y = DateTime.now(); // initialized at runtime
+
+Class User {
+ final String firstName;
+ final String lastName;
+
+ User(this.firstName, this.lastName);
+
+}
+
+```
+
+## [const keyword]
+
+- `const` variables are `compile-time constants`.
+- it means their values are determined at compile-time rather than runtime. 
+- They must be initialized with a constant value (i.e., a value that can be determined at compile-time) and cannot be changed later. 
+- const variables are also implicitly final, which means they cannot be reassigned after initialization.
+
+
+```
+const x = 5; // compile-time constant
+```
+
 ## Imperative Programming
 
 ## [Comments](dart/dart_commends.md)
