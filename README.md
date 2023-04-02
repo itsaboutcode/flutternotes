@@ -44,6 +44,9 @@
 
 ## Youtube Channels
 
+- https://www.youtube.com/@CodingwithT
+- https://www.youtube.com/@codruterdei
+- https://www.youtube.com/@academind/videos
 - https://www.youtube.com/c/TheFlutterWay
 - https://www.youtube.com/c/dbestech
 - https://www.youtube.com/c/FlutterMapp
